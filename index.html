@@ -1,80 +1,158 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaba Clothes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaba Clothes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="loader.css">
+  <link rel="icon" type="image/x-icon" href="/Assets/favicon_io/favicon-16x16.png">
 </head>
+
 <body>
-    <section class="content">
-        <div class="container">
-            <a href="index.html">
-                <div class="logo-container">
-                    <img src="Assets/logo.png" alt="logo" class="logo">
-                    <p class="logo-txt">KabaClothes</p>
-                </div>
-            </a>
-            <div class="nav">
-                <div><a href="#Home">Home</a></div>
-                <div><a href="#Categories">Store</a></div>
-                <div><a href="checkout.html">Cart</a></div>
-            </div>
-            <img class="Nav-btn" src="Assets/Nav-btn.svg" alt="Navigation button">
-        </div>
 
-        <div id="Home" class="container-2">
-            <p class="landing-page-txt">Top notch wears at your fingertips</p>
-            <a href="checkout.html" class="shop-btn">Shop now</a>
-        </div>
-        <div class="container-3">
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-        </div>
-        
-        <div class="section-2">
-            <div class="inner-section">
-                <h1 id="Categories">Categories</h1>
-            </div>
-            <div class="holders">
-                <a href="#1" class="next-btn"></a>
-                <div id="holder-1" class="holder-1 box-prop">
-                    <img class="box-img" src="Assets/clothes.jpg" alt="model-1">
-                    <h1>Women Clothes</h1>
-                </div>
-                <div class="holder-2 box-prop" onclick="checkout()">
-                    <img src="Assets/model-2.png" alt="model-1">
-                    <h1>Pants</h1>
-                </div>
-                <div id="1" class="holder-3 box-prop" onclick="checkout()">
-                    <img src="Assets/kid-skating.jpg" alt="model-1">
-                    <h1>Skate fits</h1>
-                </div>
-            </div>
-        </div>
+  <div>
+    <p class="offlineMessage"> You're offline! Please connect to the Internet and try again!
+    <div class="menu-icon-box2">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+    </div>
+    </p>
+  </div>
+  <!-- Loader div start -->
+  <div class="circle"></div>
+  <!-- Loader div end -->
 
-        <div class="footer">
-            <div class="company">
-                <h3>Kaba Clothes</h3>
-                <a href="#">Our Story</a>
-                <a href="#">What we offer</a>
-                <a href="#">What we do</a>
-            </div>
-            <div class="legal">
-                <h3>Legal</h3>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms and Conditions</a>
-                <a href="#">Refund Policy</a>
-            </div>
-            <div class="Socials">
-                <h3>Socials</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-            </div>
+  <section class="content">
+    <div class="container header">
+      <a href="index.html">
+        <div class="logo-container">
+          <img src="Assets/Images/logo.png" alt="logo" class="logo">
+          <p class="logo-txt">Kaba&nbspClothes</p>
         </div>
-        <p class="copyright">Copyright Kaba Clothes</p>
-    </section>
+      </a>
 
-    <script src="app.js"></script>
+      <div class="menu-icon-box">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <div id="nav" class="nav">
+        <div class="nav-items"><a href="#Home">Home</a></div>
+        <div class="nav-items"><a href="#Categories">Store</a></div>
+        <div class="nav-items"><a href="#">Cart</a></div>
+      </div>
+    </div>
+
+    <div id="Home" class="container-2">
+      <p class="landing-page-txt">Blending high fashion with reality</p>
+      <a href="#" class="shop-btn">Shop now</a>
+    </div>
+
+    <div class="container-3">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </div>
+
+    <div class="carousel" id="Categories">
+      <h1>Categories</h1>
+      <button class="carousel-btn left-btn is-hidden">
+        <img src="Assets/Images/left-btn.png" alt="">
+      </button>
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide current-slide">
+            <img src="Assets/Images/clothes.jpg" alt="Clothes">
+            <p>Top wears</p>
+          </li>
+          <li class="carousel-slide">
+            <img src="Assets/Images/kid-skating.jpg" alt="A kid-skating">
+            <p>Top wears</p>
+          </li>
+          <li class="carousel-slide">
+            <img src="Assets/Images/model-3.png" alt="A watch">
+            <p>Top wears</p>
+          </li>
+          <li class="carousel-slide">
+            <img src="Assets/Images/forest-pic-3.jpeg" alt="Forest">
+            <p>Top wears</p>
+          </li>
+          <li class="carousel-slide">
+            <img src="Assets/Images/forest-pic-2.jpeg" alt="Forest">
+                        <p>Top wears</p>
+          </li>
+        </ul>
+      </div>
+      <button class="carousel-btn right-btn">
+        <img src="Assets/Images/right-btn.png" alt="">
+      </button>
+
+      <div class="carousel-nav">
+        <button class="carousel-indicator current-slide"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+        <button class="carousel-indicator"></button>
+      </div>
+    </div>
+
+    <div class="bg-parallax">
+      <div class="blog-container">
+        <div class="blog">
+        <h1>Who we are</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+          </p>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae at a optio aliquam provident magni, quaerat
+            labore possimus esse quia rem tenetur assumenda similique, odit veritatis culpa? Nisi, numquam impedit.
+          </p>
+          <button class="shop-btn">Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <h3>Kaba Clothes</h3>
+        <a href="#">Our Story</a>
+        <a href="#">What we offer</a>
+        <a href="#">What we do</a>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Refund Policy</a>
+      </div>
+      <div>
+        <h3>Socials</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+      <p class="copyright">Copyright Kaba Clothes</p>
+    </div>
+
+
+  </section>
+
+  <script src="app.js"></script>
+  <script src="offlineMsg.js"></script>
 </body>
+
 </html>

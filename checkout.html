@@ -6,35 +6,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="content">
-        <div class="container">
-            <a href="index.html">
-                <div class="logo-container">
-                    <img src="Assets/logo.png" alt="logo" class="logo">
-                    <p class="logo-txt">KabaClothes</p>
+    <div class="ck-body">
+        <div>
+            <p class="offlineMessage"> You're offline! Please connect to the Internet and try again! 
+              <div class="menu-icon-box2">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </div>
+            </p>
+          </div>
+    
+        <section class="content">
+            <div class="container">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <img src="Assets/Images/logo.png" alt="logo" class="logo">
+                        <p class="logo-txt">Kaba&nbspClothes</p>
+                    </div>
+                </a>
+    
+                <div class="menu-icon-box">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-            </a>
-            <div class="nav">
-                <div><a href="index.html">Home</a></div>
-                <div><a href="index.html#Categories">Store</a></div>
-                <div><a href="checkout.html">Cart</a></div>
+    
+                <!-- Loader div start -->
+                <div class="circle"></div>
+                <!-- Loader div end -->
+    
+                <!-- Navigation start-->
+    
+                <div id="nav">
+                    <div class="nav-items"><a href="index.html">Home</a></div>
+                    <div class="nav-items"><a href="index.html#Categories">Store</a></div>
+                    <div class="nav-items"><a href="checkout.html">Cart</a></div>
+                </div>
             </div>
-            <img class="Nav-btn" src="Assets/Nav-btn.svg" alt="Navigation button">
-        </div>
-
-        <div class="ck-container">
-            <div class="content-box">
-                <h2>Comfy Gym Clothes</h2>
-                <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim a corrupti architecto aliquam optio aspernatur maiores, eligendi inventore.</p>
-                <p class="disc">20% off</p>
-                <a href="#" class="shop-btn">Buy now</a>
+    
+                <!-- Navigation start-->
+    
+                <!-- Content start-->
+    
+            <div class="ck-container">
+                <div class="content-box">
+                    <h2>Comfy Gym Clothes</h2>
+                    <h3>Description</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim a corrupti architecto aliquam optio aspernatur maiores, eligendi inventore.</p>
+                    <p class="disc">20% off</p>
+                    <a href="#" class="shop-btn">Buy now</a>
+                </div>
+                <div class="image-box">
+                    <img class="model-1" src="Assets/Images/clothes.jpg" alt="model-1">
+                </div>
             </div>
-            <div class="image-box">
-                <img class="model-1" src="Assets/clothes.jpg" alt="model-1">
-            </div>
-        </div>
-
-    </section>
+            
+                <!-- Content start-->
+    
+                <div class="footer">
+                    <div>
+                        <h3>Kaba Clothes</h3>
+                        <a href="#">Our Story</a>
+                        <a href="#">What we offer</a>
+                        <a href="#">What we do</a>
+                    </div>
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Refund Policy</a>
+                    </div>
+                    <div>
+                        <h3>Socials</h3>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                    <p class="copyright">Copyright Kaba Clothes</p>
+                </div>
+                
+        </section>
+        <script src="nav-btn.js"></script>
+        <script src="offlineMsg.js"></script>
+    </div>
 </body>
 </html>
